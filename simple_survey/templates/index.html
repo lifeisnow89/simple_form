@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-muted">Developer Survey</h1>
+        <form action="process" method="post" class="bg-light col-auto text-center">
+            <h2 class="text-center">Your input is appreciated</h2>
+            <div class="form-group">
+                <label for="name" >Name</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <select name="location" class="form-control">
+                    <option value="">SELECT ONE</option>
+                    <option value="New York">New York</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="San Jose">San Jose</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="language">Favorite language:</label>
+                <select name="language" class="form-control">
+                    <option value="">SELECT ONE</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Comments:</label>
+                <textarea name="comments" cols="15" rows="10" class="form-control"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>
